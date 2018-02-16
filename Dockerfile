@@ -15,7 +15,7 @@ RUN apt-get update -qq && apt-get install -y yarn
 
 RUN mkdir /myapp
 WORKDIR /myapp
-RUN gem install rails
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
+RUN bundle install
 COPY . /myapp
