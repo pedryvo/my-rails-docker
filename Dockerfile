@@ -1,5 +1,5 @@
 FROM ruby:slim
-RUN apt-get update -qq && apt-get install -y build-essential apt-transport-https apt-utils
+RUN apt-get update -qq && apt-get install -y build-essential apt-transport-https apt-utils curl
 
 # for nokogiri
 RUN apt-get install -y libxml2-dev libxslt1-dev
