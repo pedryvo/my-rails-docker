@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
+
 gem 'rails'
-gem 'pg'
+gem 'pg', '~> 1.0.0'
